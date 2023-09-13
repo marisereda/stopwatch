@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-content class="mat-elevation-z4">
+    <mat-card-title class="mat-headline-5 title">Stopwatch</mat-card-title>
+
+    <p class="mat-headline-1 time">
+      {{ timerService.time$ | async | date : "HH:mm:ss" : "+0" }}
+    </p>
+
+    <mat-card-actions class="buttons">
+      <button
+        mat-raised-button
+        [color]="timerService.isRunning ? 'warn' : 'primary'"
+        (click)="startStop()"
+      >
+        <mat-icon>
+          {{ timerService.isRunning ? "stop" : "play_arrow" }}</mat-icon
+        >
+        {{ timerService.isRunning ? "Stop" : "Start" }}
+      </button>
+
+      <button mat-raised-button color="accent" (click)="wait()">
+        <mat-icon>pause</mat-icon>
+        Wait
+      </button>
+
+      <button mat-raised-button color="warn" (click)="reset()">
+        <mat-icon>undo</mat-icon>
+        Reset
+      </button>
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>

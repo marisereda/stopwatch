@@ -1,0 +1,27 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$typography: mat.define-typography-config();
+$theme: mat.define-light-theme(
+  (
+    color: (
+      primary: mat.define-palette(mat.$deep-purple-palette),
+      accent: mat.define-palette(mat.$amber-palette),
+      warn: mat.define-palette(mat.$red-palette),
+    ),
+    typography: $typography,
+  )
+);
+
+@include mat.all-component-themes($theme);
+@include mat.typography-hierarchy($typography);
+
+use html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
