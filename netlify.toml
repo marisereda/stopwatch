@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/quizzes"
+  publish = "dist/stopwatch"
   command = "ng build --configuration production"
 
 [[redirects]]
