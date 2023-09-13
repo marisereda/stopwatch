@@ -1,27 +1,27 @@
 # Stopwatch
+![stopwatch](https://github.com/marisereda/stopwatch/assets/105078220/a27621c0-6e4a-4d4f-9ec4-4e66cc1aff42)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+Description
+The project "Stopwatch" represents a stopwatch. Button "Start/Stop" - starts/stops the time countdown, stops and resets the timer value.
+"Wait" - works on a double click (the time between clicks is no more than 300 ms!) The timer must stop counting; if you click start after it, the countdown resumes.
+"Reset" - resets the timer to 0. It resets the timer and starts counting again.
 
-## Development server
+Technology stack
+Angular
+Angular Material
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Live application
+![Stopwatch](https://dynamic-bombolone-7615cb.netlify.app/)
 
-## Code scaffolding
+Run locally
+Clone the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```git clone https://github.com/marisereda/quizzes.git```
 
-## Build
+Install dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  npm install
+  
+Start the development server
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  npm start
